@@ -99,3 +99,32 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.intro-content {
+    flex: 1;
+}
+
+.intro-image {
+    flex: 0 0 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro-image {
+        flex: 1;
+        width: 100%;
+    }
+}
